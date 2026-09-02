@@ -81,7 +81,7 @@ func add_quest(pos: Vector2) -> Dictionary:
 	quests_changed.emit()
 	return q
 
-func get_quest(id: String):
+func get_quest(id: String) -> Variant:
 	for q in quests:
 		if q["id"] == id:
 			return q
